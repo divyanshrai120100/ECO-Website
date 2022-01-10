@@ -8,7 +8,7 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>ACES</title>
+    <title>ECO</title>
 </head>
 <body>
 
@@ -19,27 +19,39 @@
 
     <!-- Navbar -->
         <nav id="nb1" class="navbar navbar-dark  navbar-expand-lg py-0 fixed-top">
-            <a href="#" class="navbar-brand px-3"><img src="images/Logo_Tranparent.png" alt="Aces logo"></a>
+            <a href="#" class="navbar-brand px-3"><img src="images/eco_logo 1.png" alt="Aces logo"></a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle Navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
     
             <div class="collapse navbar-collapse" id="navLinks">
                 <ul class="navbar-nav">
-                    <li class="navbar-item"><a href="#" class="nav-link nav-link nav-link-ltr">Home</a></li>
-                    <li class="navbar-item"><a href="#aboutUs" class="nav-link nav-link-ltr">About Us</a></li>
-                    <li class="navbar-item"><a href="#team" class="nav-link nav-link-ltr">Team</a></li>
-                    <li class="navbar-item"><a href="#projects" class="nav-link nav-link-ltr">Events</a></li>
-                    <li class="navbar-item"><a href="#isFooter" class="nav-link nav-link-ltr">Contact</a></li>
+                    <li class="navbar-item list"><a href="#" class="nav-link nav-link nav-link-ltr activeNav">Home</a></li>
+                    <li class="navbar-item list"><a href="#aboutUs" class="nav-link nav-link-ltr">About Us</a></li>
+                    <li class="navbar-item list"><a href="#team" class="nav-link nav-link-ltr">Team</a></li>
+                    <li class="navbar-item list"><a href="#projects" class="nav-link nav-link-ltr">Events</a></li>
+                    <li class="navbar-item list"><a href="#isFooter" class="nav-link nav-link-ltr">Contact</a></li>
                 </ul>
             </div>
         </nav>
-        <div class="home">
+
+    <!-- Landing page  -->
+
+        <!-- <div class="home">
             <img src="images/Group 2235.png" alt="">
+        </div> -->
+        <div id="landing" class="jumbotron navScroll">
+            <div class="overlay"></div>
+            <div class="container typing" id="typer">
+                <!-- <h1 class="typingEffect">ECO</h1>
+                <p>Electronics and Communication Organization</p> -->
+                
+            </div>    
         </div>
         
+    <!-- Rest of the site  -->
         <div id="rest">
-            <div id="aboutUs" class="container reveal">
+            <div id="aboutUs" class="container reveal navScroll">
                 <h2 style="padding-top: 12rem;">About Us</h2>
                 <p class="quotes">
                     “Think twice, code once” 
@@ -57,7 +69,7 @@
                 </div>
             </div>
     
-            <div id="team" class="reveal">
+            <div id="team" class="reveal navScroll">
                 <h2 style="padding-top: 12rem;">Team</h2>
                 <p class="quotes">
                     “It is harder to read code than to write it.” 
@@ -71,8 +83,8 @@
 
                     <!--Controls-->
                     <div class="controls-top mb-4">
-                        <a class="btn-floating mr-3" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
-                        <a class="btn-floating shadow-lg" href="#multi-item-example" data-slide="next"><i
+                        <a class="btn btn-success mr-3" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+                        <a class="btn btn-success shadow-lg" href="#multi-item-example" data-slide="next"><i
                             class="fas fa-chevron-right"></i></a>
                     </div>
                         <!--/.Controls-->
@@ -93,7 +105,7 @@
                             <div class="card-body">
                             <h4 class="card-title">Sapan <br> Sir</h4>
                             <p class="card-text">Faculty Advisor</p>
-                            <a class="btn btn-primary">View More</a>
+                            <a class="btn btn-success">View More</a>
                             </div>
                         </div>
                         </div>
@@ -105,7 +117,7 @@
                             <div class="card-body">
                             <h4 class="card-title">Pooja <br> Shah</h4>
                             <p class="card-text">Faculty Advisor</p>
-                            <a class="btn btn-primary">View More</a>
+                            <a class="btn btn-success">View More</a>
                             </div>
                         </div>
                         </div>
@@ -117,7 +129,7 @@
                             <div class="card-body">
                             <h4 class="card-title">Kanisha <br> Shah</h4>
                             <p class="card-text">President</p>
-                            <a class="btn btn-primary">View More</a>
+                            <a class="btn btn-success">View More</a>
                             </div>
                         </div>
                         </div>
@@ -129,7 +141,7 @@
                             <div class="card-body">
                             <h4 class="card-title">Meet <br> Vora</h4>
                             <p class="card-text">Vice President</p>
-                            <a class="btn btn-primary">View More</a>
+                            <a class="btn btn-success">View More</a>
                             </div>
                         </div>
                         </div>
@@ -147,7 +159,7 @@
                             <div class="card-body">
                             <h4 class="card-title">Kunj <br> Thakkar</h4>
                             <p class="card-text">General Secretary</p>
-                            <a class="btn btn-primary">View More</a>
+                            <a class="btn btn-success">View More</a>
                             </div>
                         </div>
                         </div>
@@ -159,7 +171,7 @@
                             <div class="card-body">
                             <h4 class="card-title">Manan <br> Patel</h4>
                             <p class="card-text">Joint Secretary</p>
-                            <a class="btn btn-primary">View More</a>
+                            <a class="btn btn-success">View More</a>
                             </div>
                         </div>
                         </div>
@@ -172,7 +184,7 @@
                                 <div class="card-body">
                                 <h4 class="card-title">Aayush <br> Shah</h4>
                                 <p class="card-text">Graphic Designer</p>
-                                <a class="btn btn-primary">View More</a>
+                                <a class="btn btn-success">View More</a>
                                 </div>
                             </div>
                         </div>
@@ -184,7 +196,7 @@
                             <div class="card-body">
                             <h4 class="card-title">Naman <br> Thaker</h4>
                             <p class="card-text">Managing director</p>
-                            <a class="btn btn-primary">View More</a>
+                            <a class="btn btn-success">View More</a>
                             </div>
                         </div>
                         </div>
@@ -202,7 +214,7 @@
                             <div class="card-body">
                             <h4 class="card-title">Mrunal <br> Shah</h4>
                             <p class="card-text">Director General</p>
-                            <a class="btn btn-primary">View More</a>
+                            <a class="btn btn-success">View More</a>
                             </div>
                         </div>
                         </div>
@@ -214,7 +226,7 @@
                             <div class="card-body">
                             <h4 class="card-title">Kalp <br> Mepani</h4>
                             <p class="card-text">Treasurer</p>
-                            <a class="btn btn-primary">View More</a>
+                            <a class="btn btn-success">View More</a>
                             </div>
                         </div>
                         </div>
@@ -226,7 +238,7 @@
                             <div class="card-body">
                             <h4 class="card-title">Shivam <br> Panchal</h4>
                             <p class="card-text">Technical Head</p>
-                            <a class="btn btn-primary">View More</a>
+                            <a class="btn btn-success">View More</a>
                             </div>
                         </div>
                         </div>
@@ -238,7 +250,7 @@
                             <div class="card-body">
                             <h4 class="card-title">Yagnik <br> Thummar</h4>
                             <p class="card-text">Technical Head</p>
-                            <a class="btn btn-primary">View More</a>
+                            <a class="btn btn-success">View More</a>
                             </div>
                         </div>
                         </div>
@@ -256,7 +268,7 @@
                                 <div class="card-body">
                                 <h4 class="card-title">Savan <br> Vaghani</h4>
                                 <p class="card-text">Membership Chair</p>
-                                <a class="btn btn-primary">View More</a>
+                                <a class="btn btn-success">View More</a>
                                 </div>
                             </div>
                         </div>
@@ -268,7 +280,7 @@
                             <div class="card-body">
                             <h4 class="card-title">Yash <br> Savani</h4>
                             <p class="card-text">Editor</p>
-                            <a class="btn btn-primary">View More</a>
+                            <a class="btn btn-success">View More</a>
                             </div>
                         </div>
                         </div>
@@ -280,7 +292,7 @@
                             <div class="card-body">
                             <h4 class="card-title">Gaurav <br> Sakariya</h4>
                             <p class="card-text">Creative Head</p>
-                            <a class="btn btn-primary">View More</a>
+                            <a class="btn btn-success">View More</a>
                             </div>
                         </div>
                         </div>
@@ -292,7 +304,7 @@
                             <div class="card-body">
                             <h4 class="card-title">Sachi <br> Chaudhary</h4>
                             <p class="card-text">Marketing Director</p>
-                            <a class="btn btn-primary">View More</a>
+                            <a class="btn btn-success">View More</a>
                             </div>
                         </div>
                         </div>
@@ -311,7 +323,7 @@
                                 <div class="card-body">
                                 <h4 class="card-title">Akshat <br> Shah</h4>
                                 <p class="card-text">Organizing Secretary</p>
-                                <a class="btn btn-primary">View More</a>
+                                <a class="btn btn-success">View More</a>
                                 </div>
                             </div>
                         </div>
@@ -323,7 +335,7 @@
                                 <div class="card-body">
                                 <h4 class="card-title">Ansh <br> Ray</h4>
                                 <p class="card-text">Public Relation Officer</p>
-                                <a class="btn btn-primary">View More</a>
+                                <a class="btn btn-success">View More</a>
                                 </div>
                             </div>
                         </div>
@@ -344,7 +356,7 @@
 
             </div>
 
-            <div id="events" class="reveal">
+            <div id="events" class="reveal navScroll navScroll">
                 <div id="projects" class="container">
                     <h2 class="heading" style="padding-top: 12rem;">Events</h2>
                     <p class="quotes">
@@ -403,10 +415,118 @@
                             </figure>
                         </div>
                     </div>
+
+                    <div class="row isFlex1 hide unhide">
+                        <div class="col-lg-6 isFlex">
+                            <figure>
+                                <img src="./images/20191003_125435.jpg" alt="Tech Table Project">
+                                <figcaption>
+                                    <h3>Foundation Day</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quaerat quibusdam et ut hic architecto minima expedita optio adipisci vel!
+                                    </p>
+                                    <p><a href="#">View</a></p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-6 isFlex">
+                            <figure>
+                                <img src="./images/IMG_0042.jpg" alt="Price Tag Project">
+                                <figcaption>
+                                    <h3>Webinar</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam culpa pariatur consequuntur ea cumque harum ad qui veritatis numquam molestias?
+                                    </p>
+                                    <p><a href="#">View</a></p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-6 isFlex">
+                            <figure>
+                                <img src="images/Logo_Tranparent.png" alt="lovely">
+                                <figcaption>
+                                    <h3>Stay Tuned</h3>
+                                    <p>
+                                        Work In Progress!!!
+                                    </p>
+                                    <p><a href="#">View</a></p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-6 isFlex">
+                            <figure>
+                                <img src="images/Logo_Tranparent.png" alt="lovely">
+                                <figcaption>
+                                    <h3>Stay Tuned</h3>
+                                    <p>
+                                        Work In Progress!!!
+                                    </p>
+                                    <p><a href="#">View</a></p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="row isFlex1 hide unhide">
+                        <div class="col-lg-6 isFlex">
+                            <figure>
+                                <img src="./images/20191003_125435.jpg" alt="Tech Table Project">
+                                <figcaption>
+                                    <h3>Foundation Day</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quaerat quibusdam et ut hic architecto minima expedita optio adipisci vel!
+                                    </p>
+                                    <p><a href="#">View</a></p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-6 isFlex">
+                            <figure>
+                                <img src="./images/IMG_0042.jpg" alt="Price Tag Project">
+                                <figcaption>
+                                    <h3>Webinar</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam culpa pariatur consequuntur ea cumque harum ad qui veritatis numquam molestias?
+                                    </p>
+                                    <p><a href="#">View</a></p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-6 isFlex">
+                            <figure>
+                                <img src="images/Logo_Tranparent.png" alt="lovely">
+                                <figcaption>
+                                    <h3>Stay Tuned</h3>
+                                    <p>
+                                        Work In Progress!!!
+                                    </p>
+                                    <p><a href="#">View</a></p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-6 isFlex">
+                            <figure>
+                                <img src="images/Logo_Tranparent.png" alt="lovely">
+                                <figcaption>
+                                    <h3>Stay Tuned</h3>
+                                    <p>
+                                        Work In Progress!!!
+                                    </p>
+                                    <p><a href="#">View</a></p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div><button class="btn btn-success" id="viewMore">View More</button></div>
+                    <div><button class="btn btn-success hide unhide" id="viewLess">View less</button></div>
+
+
+
                 </div>
             </div>
 
-            <div id="isFooter" class="isFooter mt-5">
+            <div id="isFooter" class="isFooter mt-5 navScroll">
                 <div class="row py-3">
                     <div class="col-md-6 bottomBorder">
                         <h2 class="pb-4 pt-3 getIn">Get in touch</h3>

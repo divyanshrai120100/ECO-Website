@@ -23,29 +23,29 @@ body{
 }
 
 #nb1 .nav-link{
-    color: white;
+    color: #FFFFFF;
     font-size: 1.5rem;
     margin-left: 2rem;
 }
 
 #nb1 .nav-link:hover{
-    color: #FF6B6B;
+    color: yellow;
 }
 
 .navbar.scrolled {
-    background: linear-gradient(100.98deg, #04269E -19.09%, #001F0D 117.78%);
+    background: linear-gradient(100.98deg, #049E45 -19.09%, #001F0D 117.78%);
     transition: background 500ms;
 }
 
 .nav-link {
     text-transform: uppercase;
     text-decoration: none;
-    color: #FF6B6B;
+    color: yellow;
     padding: 20px 0px;
     margin: 0px 20px;
     display: inline-block;
     position: relative;
-    opacity: 0.75;
+    opacity: 1;
   }
   
   .nav-link:hover {
@@ -57,7 +57,7 @@ body{
     height: 5px;
     content: "";
     position: absolute;
-    background-color: #FF6B6B;
+    background-color: yellow;
   }
   
   .nav-link-ltr::before {
@@ -69,11 +69,17 @@ body{
     width: 100%;
   }
 
+  #nb1 .activeNav{
+    color: yellow;
+  }
+
+  .activeNav.nav-link-ltr::before{
+    width: 100%;
+  }
 
 /********home page**************/
 
-.home{
-    /* position: absolute;  */
+/* .home{
     width : 100%;
     overflow: hidden;
     margin-bottom: -12rem;
@@ -82,6 +88,52 @@ body{
 .home > img{
     width : 100%;
     margin-top: -3vw;
+} */
+
+.jumbotron{
+  background: no-repeat center url("./images/eco_home_page_1.JPG");
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  margin-bottom: 0;
+
+}
+
+
+.jumbotron .container h1{
+  font-size: 7rem;
+  font-weight: 700;
+  padding-bottom: 15px;
+  /* border-bottom: 1px solid #FFFFFF; */
+  border-bottom-color: rgba(255,255,255,0.35);
+  display: inline-block;
+  
+}
+
+
+
+.jumbotron p{
+  font-size: 3rem;
+  border-top: 1px solid #FFFFFF;
+}
+
+.jumbotron .container{
+  position: relative;
+  top: 30%;
+  z-index: 4;
+  text-align: center;
+
+}
+
+.jumbotron .overlay{
+  background-color: black;
+  position:absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  opacity: 0.7;
+  z-index: 2;
 }
 
  
@@ -95,7 +147,7 @@ body{
     /* padding-top: 5rem ; */
     font-weight: 700;
     font-size: 3rem;
-    color: #FF6B6B;
+    color: #008000;
 }
 
 #aboutUs .vision{
@@ -112,7 +164,7 @@ body{
 #team h2{
     font-weight: 700;
     font-size: 3rem;
-    color: #FF6B6B;
+    color: #008000;
 }
 
 #team .btn-floating{
@@ -146,7 +198,7 @@ body{
 #projects .heading{
     font-weight: 700;
     font-size: 3rem;
-    color: #FF6B6B;
+    color: #008000;
 }
 
 
@@ -161,12 +213,21 @@ body{
     justify-content: center;
 }
 
+#viewMore{
+  margin-top: 2rem;
+}
+
+.hide{
+  display: none;
+}
+
+
 figure {
     /* font-family: 'Open sans'; */
   margin: 0;
   padding: 0;
   height: 300px;
-    max-width: 400px;
+  max-width: 400px;
   position: relative;
   cursor: pointer;
   overflow: hidden;
@@ -201,7 +262,7 @@ figcaption h3,figcaption p{
 }
 figcaption h3 {
   font-weight: 400;
-  color: #FF6B6B;
+  color: yellow;
   position: relative;
   font-size: 30px;
 }
@@ -222,8 +283,8 @@ figcaption a {
 
 figcaption a:hover{
     text-decoration: none;
-    color: #FF6B6B;
-    border:2px solid #FF6B6B;
+    color: yellow;
+    border:2px solid yellow;
     transition: 0.3s;
 }
 
@@ -261,7 +322,7 @@ figure:hover h3, figure:hover p {
 .isFooter{
   overflow-x: hidden;
   color: white;
-  background: linear-gradient(100.98deg, #04269E -19.09%, #001F0D 117.78%);
+  background: linear-gradient(100.98deg, #049E45 -19.09%, #001F0D 117.78%);
 }
 
 .leftRow{
@@ -291,7 +352,7 @@ figure:hover h3, figure:hover p {
   color: white;
 }
 .link:hover{
-  color: #FF6B6B;
+  color: yellow;
   text-decoration: none;
 
 }
@@ -578,3 +639,51 @@ figure:hover h3, figure:hover p {
       padding-right: 7.4%;
     }
   }
+
+  /********************typing effect ********************/
+
+  /* .type-wrap {
+    font-size: 50px;
+    padding: 20px;
+  }
+
+  .typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+  }
+
+  @keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+  } */
+
+  .typing{
+    /* top: 50%; */
+    /* left: -10%; */
+    color: white;
+    font-size: 4rem;
+}
+
+
+.typing::after{
+    content: "";
+    color: white;
+    position: absolute;
+    bottom: 1rem;
+    height: 5rem;
+    width: 5px;
+    border-right: 3px solid white;
+    animation: blink 1s infinite ease;
+}
+
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+} 
