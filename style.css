@@ -217,6 +217,10 @@ body{
   margin-top: 2rem;
 }
 
+#viewLess{
+  margin-top: 2rem;
+}
+
 .hide{
   display: none;
 }
