@@ -37,7 +37,7 @@ $(function(){
   //   contentType: 'html'
   // });
 
-  const text = ["ECO","Electronics"];
+  const text = ["ECO","Electronics and Communication Organization"];
 let count = 0;
 let index = 0;
 let forward = 0;
