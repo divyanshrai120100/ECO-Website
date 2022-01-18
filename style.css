@@ -18,8 +18,8 @@ body{
 /***********navbar****************/
 
 #nb1 img{
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3.5rem;
+    height: 4.5rem;
 }
 
 #nb1 .nav-link{
@@ -101,7 +101,7 @@ body{
 
 
 .jumbotron .container h1{
-  font-size: 7rem;
+  font-size: 1rem;
   font-weight: 700;
   padding-bottom: 15px;
   /* border-bottom: 1px solid #FFFFFF; */
@@ -312,8 +312,8 @@ figure:hover h3, figure:hover p {
 }
 
 #projects figure img{
-    width: 400px;
-    height: 300px;
+    width: 100%;
+    height: 250px;
 }
 
 #rest{
@@ -379,6 +379,11 @@ figure:hover h3, figure:hover p {
 
   /***********footer query*****************/
   @media(max-width: 768px){
+    #nb1 img{
+      width: 4.5rem;
+      height: 5.5rem;
+  }
+
     .isRight{
       border-left: none;
     }
@@ -425,11 +430,11 @@ figure:hover h3, figure:hover p {
     } */
 
     #rest h2{
-      font-size: 2rem !important;
+      font-size: 3rem !important;
     }
 
     #aboutUs{
-      padding: 2rem 5rem;
+      padding: 2rem 2rem;
     }
 
     #aboutUs .vision{
@@ -437,7 +442,7 @@ figure:hover h3, figure:hover p {
     }
 
     #team{
-      padding: 2rem 5rem;
+      padding: 2rem 2rem;
     }
 
     #team h2{
@@ -445,7 +450,7 @@ figure:hover h3, figure:hover p {
     }
 
     #projects{
-      padding: 2rem 5rem;
+      padding: 2rem 2rem;
     }
 
     #projects h2{
@@ -513,7 +518,7 @@ figure:hover h3, figure:hover p {
     }
 
     #aboutUs{
-      padding: 2rem 5rem;
+      padding: 2rem 2rem;
     }
 
     #aboutUs .vision{
@@ -529,7 +534,7 @@ figure:hover h3, figure:hover p {
     }
 
     #projects{
-      padding: 2rem 5rem;
+      padding: 2rem 2rem;
     }
 
     #projects h2{
@@ -668,7 +673,7 @@ figure:hover h3, figure:hover p {
     /* top: 50%; */
     /* left: -10%; */
     color: white;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 
