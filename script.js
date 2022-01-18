@@ -37,7 +37,8 @@ $(function(){
   //   contentType: 'html'
   // });
 
-const text = ["ECO","Electronics and Communication Student's Organisation"];
+
+  const text = ["ECO","Electronics and Communication Student's Organisation!!"];
 let count = 0;
 let index = 0;
 let forward = 0;
@@ -121,7 +122,7 @@ viewMore.addEventListener("click", function(){
 });
 
 viewLess.addEventListener("click", function(){
-  for(let i=0; i<disp.length; i++){
+  for(let i=0; i<=disp.length; i++){
     disp[i].classList.add("hide");
     viewLess.classList.add("hide");
     viewMore.classList.remove("hide")
