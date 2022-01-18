@@ -160,6 +160,13 @@ body{
     padding: 40px 140px;
     /* display: flex; */
 }
+.card .card-text{
+  font-weight: bold;
+}
+
+.card h4{
+  font-weight: bold;
+}
 
 #team h2{
     font-weight: 700;
@@ -329,14 +336,31 @@ figure:hover h3, figure:hover p {
   background: linear-gradient(100.98deg, #049E45 -19.09%, #001F0D 117.78%);
 }
 
+.isFooter p{
+  font-size: 1.25rem;
+
+}
+
 .leftRow{
-  padding-left: 5rem;
+  padding: auto
+}
+
+.row h2{
+  font-weight: bold;
+  font-size: 2.5rem;
+  padding: auto;
 }
 
 .isRight{
   border-left: 3px solid white;
-  padding-left: 10%;
   padding-top: 3%;
+}
+
+.isRight h4{
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 15px;
+
 }
 
 .getIn{
@@ -450,7 +474,7 @@ figure:hover h3, figure:hover p {
     }
 
     #projects{
-      padding: 2rem 2rem;
+      padding: 2rem 1rem;
     }
 
     #projects h2{
@@ -518,7 +542,7 @@ figure:hover h3, figure:hover p {
     }
 
     #aboutUs{
-      padding: 2rem 2rem;
+      padding: 2rem 1.5rem;
     }
 
     #aboutUs .vision{
@@ -605,7 +629,7 @@ figure:hover h3, figure:hover p {
     }
 
     #aboutUs{
-      padding: 2rem 5rem;
+      padding: 2rem 1.5rem;
     }
 
     #aboutUs .vision{
