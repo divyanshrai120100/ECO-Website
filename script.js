@@ -37,7 +37,7 @@ $(function(){
   //   contentType: 'html'
   // });
 
-const text = ["ECO","Electronics and Communication Student's Organisation!!"];
+const text = ["ECO","Electronics and Communication Students' Organisation!!"];
 
 let count = 0;
 let index = 0;
@@ -77,13 +77,13 @@ let letter = '';
 
 })();
 
-$(function activeLink(){
-  $(document).on('click','ul li a',function(){
-      $('ul li a').removeClass('activeNav');
-      $(this).addClass('activeNav');
+// $(function activeLink(){
+//   $(document).on('click','ul li a',function(){
+//       $('ul li a').removeClass('activeNav');
+//       $(this).addClass('activeNav');
   
-  });
-});
+//   });
+// });
 
         // let section = document.querySelectorAll('.navScroll');
         // let lists = document.querySelectorAll('.list');

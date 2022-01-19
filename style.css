@@ -221,11 +221,13 @@ body{
 }
 
 #viewMore{
-  margin-top: 2rem;
+  margin-top: 3rem;
+  margin-right: 2rem;
 }
 
 #viewLess{
-  margin-top: 2rem;
+  margin-top: 3rem;
+  margin-right: 2rem;
 }
 
 .hide{
@@ -238,7 +240,7 @@ figure {
   margin: 0;
   padding: 0;
   height: 300px;
-  max-width: 400px;
+  width: 400px;
   position: relative;
   cursor: pointer;
   overflow: hidden;
@@ -320,7 +322,7 @@ figure:hover h3, figure:hover p {
 
 #projects figure img{
     width: 100%;
-    height: 250px;
+    height: 100%;
 }
 
 #rest{
@@ -491,6 +493,18 @@ figure:hover h3, figure:hover p {
 
     #projects .quotes{
       padding-bottom: 1rem;
+    }
+
+    #viewMore{
+      
+      margin:auto;
+      margin-top: 2rem;
+    }
+
+    #viewLess{
+      
+      margin:auto;
+      margin-top: 2rem;
     }
 
 
@@ -676,6 +690,14 @@ figure:hover h3, figure:hover p {
       padding-right: 7.4%;
     }
   }
+
+  @media only screen and (min-width: 993px) and (max-width: 1199px){
+    #team{
+      padding: 40px 200px;
+    }
+
+  }
+
 
   /********************typing effect ********************/
 
