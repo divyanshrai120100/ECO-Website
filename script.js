@@ -77,38 +77,38 @@ let letter = '';
 
 })();
 
-// $(function activeLink(){
-//   $(document).on('click','ul li a',function(){
-//       $('ul li a').removeClass('activeNav');
-//       $(this).addClass('activeNav');
+$(function activeLink(){
+  $(document).on('click','ul li a',function(){
+      $('ul li a').removeClass('activeNav');
+      $(this).addClass('activeNav');
   
-//   });
-// });
+  });
+});
 
-        // let section = document.querySelectorAll('.navScroll');
-        // let lists = document.querySelectorAll('.list');
-        // function activeLink(li) {
-        //     lists.forEach((item) => item.classList.removeClass('activeNav'));
-        //     li.classList.addClass('activeNav');
-        // }
-        // lists.forEach((item) =>
-        //     item.addEventListener('click', function(){
-        //         activeLink(this);
-        //     }));
+        let section = document.querySelectorAll('.navScroll');
+        let lists = document.querySelectorAll('.list');
+        function activeLink(li) {
+            lists.forEach((item) => item.classList.removeClass('activeNav'));
+            li.classList.addClass('activeNav');
+        }
+        lists.forEach((item) =>
+            item.addEventListener('click', function(){
+                activeLink(this);
+            }));
 
-        // window.onscroll = () => {
-        //     section.forEach(sec => {
-        //         let top = window.scrollY;
-        //         let offset = sec.offsetTop;
-        //         let height = sec.offsetHeight;
-        //         let id = sec.getAttribute('id');
+        window.onscroll = () => {
+            section.forEach(sec => {
+                let top = window.scrollY;
+                let offset = sec.offsetTop;
+                let height = sec.offsetHeight;
+                let id = sec.getAttribute('id');
 
-        //         if (top >= offset && top < offset + height) {
-        //             const target = document.querySelector(`[href='#${id}']`).parentElement;
-        //             activeLink(target);
-        //         }
-        //     })
-        // };
+                if (top >= offset && top < offset + height) {
+                    const target = document.querySelector(`[href='#${id}']`).parentElement;
+                    activeLink(target);
+                }
+            })
+        };
 
 let disp = document.getElementsByClassName("unhide");
 let viewMore = document.getElementById("viewMore");
