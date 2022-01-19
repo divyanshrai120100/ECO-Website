@@ -37,8 +37,8 @@ $(function(){
   //   contentType: 'html'
   // });
 
+const text = ["ECO","Electronics and Communication Student's Organisation!!"];
 
-  const text = ["ECO","Electronics and Communication Student's Organisation!!"];
 let count = 0;
 let index = 0;
 let forward = 0;

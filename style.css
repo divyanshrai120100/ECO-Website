@@ -345,6 +345,9 @@ figure:hover h3, figure:hover p {
   padding: auto
 }
 
+.leftRow a{
+  font-size: 1.65rem
+}
 .row h2{
   font-weight: bold;
   font-size: 2.5rem;
@@ -403,6 +406,7 @@ figure:hover h3, figure:hover p {
 
   /***********footer query*****************/
   @media(max-width: 768px){
+
     #nb1 img{
       width: 4.5rem;
       height: 5.5rem;
