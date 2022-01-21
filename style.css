@@ -17,6 +17,7 @@ body{
 
 /***********navbar****************/
 
+
 #nb1 img{
     width: 3.5rem;
     height: 4.5rem;
@@ -37,8 +38,13 @@ body{
     transition: background 500ms;
 }
 
+.colorw.scrolled {
+  background: white;
+  transition: background 500ms;
+}
+
 .nav-link {
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-decoration: none;
     color: yellow;
     padding: 20px 0px;
@@ -77,6 +83,8 @@ body{
     width: 100%;
   }
 
+  
+
 /********home page**************/
 
 /* .home{
@@ -91,7 +99,7 @@ body{
 } */
 
 .jumbotron{
-  background: no-repeat center url("./images/eco_home_page_1.JPG");
+  background: no-repeat center url("./images/home_page.JPG");
   background-size: cover;
   height: 100vh;
   color: white;
@@ -348,11 +356,11 @@ figure:hover h3, figure:hover p {
 }
 
 .leftRow a{
-  font-size: 1.65rem
+  font-size: 1.25rem;
 }
 .row h2{
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding: auto;
 }
 
@@ -369,6 +377,7 @@ figure:hover h3, figure:hover p {
 }
 
 .getIn{
+  padding-top: 2.5rem;
   text-align: center;
 }
 
@@ -732,7 +741,7 @@ figure:hover h3, figure:hover p {
     color: white;
     position: absolute;
     bottom: 1rem;
-    height: 5rem;
+    height: 3.5rem;
     width: 5px;
     border-right: 3px solid white;
     animation: blink 1s infinite ease;
@@ -746,3 +755,7 @@ figure:hover h3, figure:hover p {
         opacity: 1;
     }
 } 
+
+#nb1 #colorw{
+  color: white;
+}
